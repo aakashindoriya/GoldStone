@@ -33,7 +33,11 @@ This repository contains a web application with several routes for managing user
 To run this web application locally, follow these steps:
 
 1. Clone the repository: `git clone <repository-url>`
-2. move into clint Install dependencies: `npm install`
+2. move into server Install dependencies: `npm install`
 3. Configure MongoDB connection in the application provide a .env file with MONGOURL.
 4. Start the server: `npm start`
 5. Access the application in your browser at `http://localhost:8080`
+6. Open a new terminal and navigate to the `client` directory: `cd client`
+6. Install frontend dependencies: `npm install`
+7. Start the frontend server: `npm start`
+8. Access the application in your browser at `http://localhost:3000`
