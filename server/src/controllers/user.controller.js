@@ -45,10 +45,12 @@ const UPDATEUSER = async (req, res) => {
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
-
+        const { email, name, gender, status } = req.body
         // Update the user with the provided data
-        user.set({ ...req.body });
+        console.log(req.body)
+        user.set({ email, name, gender, status });
         const updatedUser = await user.save();
+        console.log(updatedUser)
 
         return res.status(200).json(updatedUser);
     } catch (error) {
